@@ -1,238 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coder Friends</title>
     <!-- Box-icon -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link           href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div class="nav container">
-            <a href="#" class="logo">CodeFriends <span>Inicio</span></a>
-            <a href="#" class="login">Cadastrese</a>
+      <div class="nav container">
+        <div class="profile-logo">
+          <img src="img/logo.jpg" alt="" class="profile-logo"/>
         </div>
+
+        <a href="#" class="logo">CoderFriends </a>
+        <a href="#" class="login">Cadastrese</a>
+      </div>
     </header>
 
     <section class="home" id="home">
-        <div class="home-text container">
-            <h2 class="home-title">Unidos pelas Nossas Histórias</h2>
-            <span class="home-subtitle">"Um espaço para compartilhar e celebrar a experiência imigrante"</span>
-        </div>
+      <div class="home-text container">
+        <h2 class="home-title">Unidos pelas Nossas Histórias</h2>
+        <span class="home-subtitle">
+            "Um espaço para compartilhar e celebrar a 
+            experiência imigrante"
+        </span>
+      </div>
     </section>
 
     <section class="about container" id="about">
-        <div class="contentBx">
-            <h2 class="titleText">A importância dos imigrantes na nossa sociedade</h2>
-                <article class="title-text">
-                    <p>Os imigrantes desempenham um papel crucial em nossa sociedade, trazendo riqueza cultural e contribuindo para o crescimento econômico. Muitos deles deixam seus países de origem em busca de melhores oportunidades e uma vida mais segura. Sua determinação e espírito empreendedor os tornam uma força vital em nossas comunidades.</p>
-                    
-                    <p>Além de sua contribuição econômica, os imigrantes enriquecem nossa cultura com sua diversidade. Eles trazem diferentes tradições, linguagens e perspectivas que ajudam a promover a tolerância e o entendimento mútuo. Ao interagir com pessoas de diferentes origens, ampliamos nossa visão de mundo e nos tornamos mais empáticos e de mente aberta.</p>
-                    
-                    <p>No entanto, os imigrantes geralmente enfrentam desafios significativos, como barreiras linguísticas, discriminação e dificuldades de acesso a serviços básicos. É essencial que nossas sociedades promovam políticas inclusivas que ofereçam apoio e oportunidades aos imigrantes, permitindo que eles se integrem plenamente e contribuam significativamente para suas novas comunidades.</p>
-                    
-                  </article>    
-            <a href="#" class="btn2">Read more</a>
-        </div>
-        <div class="imgBx">
-            <img src="img/Anita3.png" alt="" class="fitBg">
-        </div>
+      <div class="contentBx">
+        <h2 class="titleText">
+          A importância dos imigrantes na nossa sociedade
+        </h2>
+        <article class="title-text">
+          <p>
+            Os imigrantes desempenham um papel crucial em nossa sociedade,
+            trazendo riqueza cultural e contribuindo para o crescimento
+            econômico. Muitos deles deixam seus países de origem em busca de
+            melhores oportunidades e uma vida mais segura. Sua determinação e
+            espírito empreendedor os tornam uma força vital em nossas
+            comunidades.
+          </p>
+
+          <p>
+            Além de sua contribuição econômica, os imigrantes enriquecem nossa
+            cultura com sua diversidade. Eles trazem diferentes tradições,
+            linguagens e perspectivas que ajudam a promover a tolerância e o
+            entendimento mútuo. Ao interagir com pessoas de diferentes origens,
+            ampliamos nossa visão de mundo e nos tornamos mais empáticos e de
+            mente aberta.
+          </p>
+
+          <p>
+            No entanto, os imigrantes geralmente enfrentam desafios
+            significativos, como barreiras linguísticas, discriminação e
+            dificuldades de acesso a serviços básicos. É essencial que nossas
+            sociedades promovam políticas inclusivas que ofereçam apoio e
+            oportunidades aos imigrantes, permitindo que eles se integrem
+            plenamente e contribuam significativamente para suas novas
+            comunidades.
+          </p>
+        </article>
+        <a href="#" class="btn2">Read more</a>
+      </div>
+      <div class="imgBx">
+        <img src="img/Anita3.png" alt="" class="fitBg" />
+      </div>
     </section>
 
     <div class="post-filter container">
-        <span class="filter-item active-filter" data-filter="all">All</span>
-        <span class="filter-item" data-filter="NI">Notícias de Imigração</span>
-        <span class="filter-item" data-filter="HS">Histórias de Sucesso</span>
-        <span class="filter-item" data-filter="RD">Recursos e Dicas</span>
+      <span class="filter-item active-filter" data-filter="all">All</span>
+      <span class="filter-item" data-filter="NI">Notícias de Imigração</span>
+      <span class="filter-item" data-filter="HS">Histórias de Sucesso</span>
+      <span class="filter-item" data-filter="RD">Recursos e Dicas</span>
     </div>
-    
+
     <div class="post container">
-        <!-- Post 1 -->
-        <div class="post-box NI">
-            <img src="img/img1.jpeg" alt="" class="post-img">
-            <h2 class="category">Notícias de Imigração</h2>
-            <a href="#" class="post-title">Promovem a integração de imigrantes</a>
-            <span class="post-date">10 Fevereiro 2023</span>
-            <p class="post-description">Governo brasileiro lança programas de ensino de português e cursos de cultura local para facilitar a integração de imigrantes no país.</p>
-            <div class="profile">
-                <img src="images/testi1.jpg" alt="" class="profile-img">
-                <span class="profile-name">Ana Silva</span>
-            </div>
-        </div>
-        <!-- Post 2 -->
-        <div class="post-box HS">
-            <img src="img/img2.jpg" alt="" class="post-img">
-            <h2 class="category">Histórias de Sucesso</h2>
-            <a href="#" class="post-title">A Jornada de Superacão de Maria</a>
-            <span class="post-date">10 Março de 2020</span>
-            <p class="post-description">Maria, uma imigrante vinda da Venezuela, chegou ao Brasil em busca de uma vida melhor para sua família. Ela enfrentou inúmeras dificuldades, mas nunca desistiu. Com determinação e trabalho árduo, Maria conseguiu abrir seu próprio negócio e se tornou um exemplo de superação para outros imigrantes em sua comunidade.</p>
-            <div class="profile">
-                <img src="images/testi1.jpg" alt="" class="profile-img">
-                <span class="profile-name">Carlos Silva</span>
-            </div>
-        </div>
-        <!-- Post 3 -->
-        <div class="post-box HS">
-            <img src="img/img9.jpg" alt="" class="post-img">
-            <h2 class="category">Histórias de Sucesso</h2>
-            <a href="#" class="post-title">O Sonho Realizado de Juan</a>
-            <span class="post-date">5 Julho 2019</span>
-            <p class="post-description">Juan, um imigrante colombiano, veio para o Brasil em busca de oportunidades de trabalho. Ele enfrentou barreiras linguísticas e culturais, mas nunca perdeu a esperança. Com muito esforço e dedicação, Juan conseguiu se formar em uma universidade brasileira e agora trabalha como engenheiro, realizando seu sonho e contribuindo para o desenvolvimento do país.</p>
-            <div class="profile">
-                <img src="images/testi1.jpg" alt="" class="profile-img">
-                <span class="profile-name">Ana Santos</span>
-            </div>
-        </div>
-        <!-- Post 4 -->
-        <div class="post-box NI">
-            <img src="img/img6.jpg" alt="" class="post-img">
-            <h2 class="category">Notícias de Imigração</h2>
-            <a href="#" class="post-title">Brasil estabelece medidas de proteção a refugiados</a>
-            <span class="post-date">25 Abril 2023</span>
-            <p class="post-description">O governo brasileiro implementa políticas de assistência e proteção aos refugiados venezuelanos em situação de vulnerabilidade, proporcionando-lhes apoio e acesso a serviços básicos.</p>
-            <div class="profile">
-                <img src="images/testi1.jpg" alt="" class="profile-img">
-                <span class="profile-name">Laura Oliveira</span>
-            </div>
-        </div>
-        <!-- Post 5 -->
-        <div class="post-box NI">
-            <img src="img/img4.png" alt="" class="post-img">
-            <h2 class="category">Notícias de Imigração</h2>
-            <a href="#" class="post-title">Amplia oportunidades de trabalho para imigrantes </a>
-            <span class="post-date">7 Maio 2023</span>
-            <p class="post-description">O governo brasileiro facilita a contratação de imigrantes altamente qualificados, simplificando os procedimentos de visto e criando programas especializados de emprego.</p>
-            <div class="profile">
-                <img src="images/testi1.jpg" alt="" class="profile-img">
-                <span class="profile-name">Laura Oliveira</span>
-            </div>
-        </div>
-        <!-- Post 6 -->
-        <div class="post-box RD">
-            <img src="img/img11.jpg" alt="" class="post-img">
-            <h2 class="category">Recursos e Dicas</h2>
-            <a href="#" class="post-title">A Importância da Integração Social por OIM</a>
-            <span class="post-date">03 de Maio de 2023</span>
-            <p class="post-description">um imigrante venezuelano, foi beneficiado pelo programa de integração da OIM no Brasil. Através de cursos de idiomas, capacitação profissional e apoio psicossocial, Miguel conseguiu se adaptar ao novo país, encontrar emprego e se tornar um membro ativo da sociedade brasileira. Sua história demonstra o impacto positivo que a integração social pode ter na vida dos migrantes.</p>
-            <div class="profile">
-                <img src="images/testi1.jpg" alt="" class="profile-img">
-                <span class="profile-name">MKHB</span>
-            </div>
-        </div>
-        <!-- Post 7 -->
-        <div class="post-box NI">
-            <img src="img/img5.jpg" alt="" class="post-img">
-            <h2 class="category">Notícias de Imigração</h2>
-            <a href="#" class="post-title">Brasil fortalece o combate ao tráfico de pessoas</a>
-            <span class="post-date">15 de Setembro - 2022</span>
-            <p class="post-description">O Brasil intensifica esforços para combater o tráfico de pessoas no campo migratório, implementando medidas de prevenção, proteção e repressão aos responsáveis.</p>
-            <div class="profile">
-                <img src="images/testi1.jpg" alt="" class="profile-img">
-                <span class="profile-name">Marco Fernandes</span>
-            </div>
-        </div>
-        <!-- Post 8 -->
-        <div class="post-box RD">
-            <img src="img/img12.jpg" alt="" class="post-img">
-            <h2 class="category">Recursos e Dicas</h2>
-            <a href="#" class="post-title">Iniciativa Empreendedora de Ana: Empoderando Mulheres Imigrantes</a>
-            <span class="post-date">15 Julho 2022</span>
-            <p class="post-description">Ana, uma imigrante africana, participou de um projeto de capacitação para mulheres empreendedoras da OIM no Brasil. Com o apoio da organização, Ana desenvolveu habilidades de negócios, recebeu assistência técnica e acesso a microcrédito. Agora, ela administra com sucesso seu próprio negócio, empregando outras mulheres imigrantes e contribuindo para a economia local.</p>
-            <div class="profile">
-                <img src="images/testi1.jpg" alt="" class="profile-img">
-                <span class="profile-name">Lucas Oliveira</span>
-            </div>
-        </div>
-        <!-- Post 9 -->
-        <div class="post-box HS">
-            <img src="img/img10.jpg" alt="" class="post-img">
-            <h2 class="category">Histórias de Sucesso</h2>
-            <a href="#" class="post-title">A História Inspiradora de Ahmed</a>
-            <span class="post-date">20 de Setembro de 2018</span>
-            <p class="post-description">Ahmed, um refugiado sírio, encontrou abrigo no Brasil depois de fugir da guerra em seu país. Ele começou do zero, aprendendo o idioma e se adaptando à nova cultura. Com habilidades culinárias excepcionais, Ahmed abriu um pequeno restaurante que se tornou muito popular. Sua história inspiradora de resiliência e coragem tocou o coração de muitas pessoas, tornando-o um exemplo de sucesso para outros imigrantes.</p>
-            <div class="profile">
-                <img src="images/testi1.jpg" alt="" class="profile-img">
-                <span class="profile-name">Luiza Oliveira</span>
-            </div>
-        </div>
-        <!-- Post 10 -->
-        <div class="post-box NI">
-        <img src="img/img7.jpg" alt="" class="post-img">
+      <!-- Post 1 -->
+      <div class="post-box NI">
+        <img src="img/img1.jpeg" alt="" class="post-img" />
         <h2 class="category">Notícias de Imigração</h2>
-        <a href="#" class="post-title">Novas políticas migratórias aceleram o processo de regularização</a>
-        <span class="post-date">03 de Novembro - 2022</span>
-        <p class="post-description">O governo brasileiro anuncia mudanças nos procedimentos de regularização imigratória para facilitar e agilizar o acesso dos imigrantes aos documentos legais.</p>
+        <a href="#" class="post-title">Promovem a integração de imigrantes</a>
+        <span class="post-date">10 Fevereiro 2023</span>
+        <p class="post-description">
+          Governo brasileiro lança programas de ensino de português e cursos de
+          cultura local para facilitar a integração de imigrantes no país.
+        </p>
         <div class="profile">
-            <img src="images/testi1.jpg" alt="" class="profile-img">
-            <span class="profile-name"></span>Gabriela Almeida</span>
+          <img
+            src="img/img-escritor/ana-silva.jpeg"
+            alt=""
+            class="profile-img"
+          />
+          <span class="profile-name">Ana Silva</span>
         </div>
+      </div>
+      <!-- Post 2 -->
+      <div class="post-box HS">
+        <img src="img/img2.jpg" alt="" class="post-img" />
+        <h2 class="category">Histórias de Sucesso</h2>
+        <a href="#" class="post-title">A Jornada de Superacão de Maria</a>
+        <span class="post-date">10 Março de 2020</span>
+        <p class="post-description">
+          Maria, uma imigrante vinda da Venezuela, chegou ao Brasil em busca de
+          uma vida melhor para sua família. Ela enfrentou inúmeras dificuldades,
+          mas nunca desistiu. Com determinação e trabalho árduo, Maria conseguiu
+          abrir seu próprio negócio e se tornou um exemplo de superação para
+          outros imigrantes em sua comunidade.
+        </p>
+        <div class="profile">
+          <img
+            src="img/img-escritor/carlos-silv.jpeg"
+            alt=""
+            class="profile-img"
+          />
+          <span class="profile-name">Carlos Silva</span>
         </div>
-        <!-- Post 11 -->
-        <div class="post-box NI">
-        <img src="img/img8.jpg" alt="" class="post-img">
+      </div>
+      <!-- Post 3 -->
+      <div class="post-box HS">
+        <img src="img/img9.jpg" alt="" class="post-img" />
+        <h2 class="category">Histórias de Sucesso</h2>
+        <a href="#" class="post-title">O Sonho Realizado de Juan</a>
+        <span class="post-date">5 Julho 2019</span>
+        <p class="post-description">
+          Juan, um imigrante colombiano, veio para o Brasil em busca de
+          oportunidades de trabalho. Ele enfrentou barreiras linguísticas e
+          culturais, mas nunca perdeu a esperança. Com muito esforço e
+          dedicação, Juan conseguiu se formar em uma universidade brasileira e
+          agora trabalha como engenheiro, realizando seu sonho e contribuindo
+          para o desenvolvimento do país.
+        </p>
+        <div class="profile">
+          <img
+            src="img/img-escritor/ana-santos.jpeg"
+            alt=""
+            class="profile-img"
+          />
+          <span class="profile-name">Ana Santos</span>
+        </div>
+      </div>
+      <!-- Post 4 -->
+      <div class="post-box NI">
+        <img src="img/img6.jpg" alt="" class="post-img" />
         <h2 class="category">Notícias de Imigração</h2>
-        <a href="#" class="post-title">Programas de empreendedorismo para imigrantes</a>
-        <span class="post-date">20 de Dezembro - 2022</span>
-        <p class="post-description">Iniciativas governamentais e privadas no Brasil oferecem programas de apoio e financiamento para que os imigrantes possam empreender e contribuir para o desenvolvimento econômico do país.</p>
+        <a href="#" class="post-title"
+          >Brasil estabelece medidas de proteção a refugiados</a
+        >
+        <span class="post-date">25 Abril 2023</span>
+        <p class="post-description">
+          O governo brasileiro implementa políticas de assistência e proteção
+          aos refugiados venezuelanos em situação de vulnerabilidade,
+          proporcionando-lhes apoio e acesso a serviços básicos.
+        </p>
         <div class="profile">
-            <img src="images/testi1.jpg" alt="" class="profile-img">
-            <span class="profile-name"> Rafael Costa</span>
+          <img
+            src="img/img-escritor/lucas-ol.jpeg"
+            alt=""
+            class="profile-img"
+          />
+          <span class="profile-name">Matheus Lopez</span>
         </div>
+      </div>
+      <!-- Post 5 -->
+      <div class="post-box NI">
+        <img src="img/img4.png" alt="" class="post-img" />
+        <h2 class="category">Notícias de Imigração</h2>
+        <a href="#" class="post-title"
+          >Amplia oportunidades de trabalho para imigrantes
+        </a>
+        <span class="post-date">7 Maio 2023</span>
+        <p class="post-description">
+          O governo brasileiro facilita a contratação de imigrantes altamente
+          qualificados, simplificando os procedimentos de visto e criando
+          programas especializados de emprego.
+        </p>
+        <div class="profile">
+          <img src="img/img-escritor/gabriela.jpg" alt="" class="profile-img" />
+          <span class="profile-name">Laura Oliveira</span>
         </div>
-        <!-- Post 12 -->
-        <div class="post-box RD">
-        <img src="img/img12.jpg" alt="" class="post-img">
+      </div>
+      <!-- Post 6 -->
+      <div class="post-box RD">
+        <img src="img/img11.jpg" alt="" class="post-img" />
         <h2 class="category">Recursos e Dicas</h2>
-        <a href="#" class="post-title">Toti Diversidade, Promove a empregabilidade de refugiados</a>
-        <span class="post-date">10 de Dezembro - 2022</span>
-        <p class="post-description">Ao longo de cinco anos, a Toti Diversidade formou 660 pessoas. Impacto será potencializado em 2023, ano em que vai capacitar mais de 750 refugiados.</p>
+        <a href="#" class="post-title"
+          >A Importância da Integração Social por OIM</a
+        >
+        <span class="post-date">03 de Maio de 2023</span>
+        <p class="post-description">
+          um imigrante venezuelano, foi beneficiado pelo programa de integração
+          da OIM no Brasil. Através de cursos de idiomas, capacitação
+          profissional e apoio psicossocial, Miguel conseguiu se adaptar ao novo
+          país, encontrar emprego e se tornar um membro ativo da sociedade
+          brasileira. Sua história demonstra o impacto positivo que a integração
+          social pode ter na vida dos migrantes.
+        </p>
         <div class="profile">
-            <img src="images/testi1.jpg" alt="" class="profile-img">
-            <span class="profile-name"> Rafael Costa</span>
+          <img
+            src="img/img-escritor/luiza-oliv.jpeg"
+            alt=""
+            class="profile-img"
+          />
+          <span class="profile-name">Laura Oliveira</span>
         </div>
+      </div>
+      <!-- Post 7 -->
+      <div class="post-box NI">
+        <img src="img/img5.jpg" alt="" class="post-img" />
+        <h2 class="category">Notícias de Imigração</h2>
+        <a href="#" class="post-title"
+          >Brasil fortalece o combate ao tráfico de pessoas</a
+        >
+        <span class="post-date">15 de Setembro - 2022</span>
+        <p class="post-description">
+          O Brasil intensifica esforços para combater o tráfico de pessoas no
+          campo migratório, implementando medidas de prevenção, proteção e
+          repressão aos responsáveis.
+        </p>
+        <div class="profile">
+          <img
+            src="img/img-escritor/marco-fernandez.jpeg"
+            alt=""
+            class="profile-img"
+          />
+          <span class="profile-name">Marco Fernandes</span>
         </div>
-        
+      </div>
+      <!-- Post 8 -->
+      <div class="post-box RD">
+        <img src="img/img12.jpg" alt="" class="post-img" />
+        <h2 class="category">Recursos e Dicas</h2>
+        <a href="#" class="post-title"
+          >Iniciativa Empreendedora de Ana: Empoderando Mulheres Imigrantes</a
+        >
+        <span class="post-date">15 Julho 2022</span>
+        <p class="post-description">
+          Ana, uma imigrante africana, participou de um projeto de capacitação
+          para mulheres empreendedoras da OIM no Brasil. Com o apoio da
+          organização, Ana desenvolveu habilidades de negócios, recebeu
+          assistência técnica e acesso a microcrédito. Agora, ela administra com
+          sucesso seu próprio negócio, empregando outras mulheres imigrantes e
+          contribuindo para a economia local.
+        </p>
+        <div class="profile">
+          <img
+            src="img/img-escritor/lucas-ol.jpeg"
+            alt=""
+            class="profile-img"
+          />
+          <span class="profile-name">Lucas Oliveira</span>
+        </div>
+      </div>
+      <!-- Post 9 -->
+      <div class="post-box HS">
+        <img src="img/img10.jpg" alt="" class="post-img" />
+        <h2 class="category">Histórias de Sucesso</h2>
+        <a href="#" class="post-title">A História Inspiradora de Ahmed</a>
+        <span class="post-date">20 de Setembro de 2018</span>
+        <p class="post-description">
+          Ahmed, um refugiado sírio, encontrou abrigo no Brasil depois de fugir
+          da guerra em seu país. Ele começou do zero, aprendendo o idioma e se
+          adaptando à nova cultura. Com habilidades culinárias excepcionais,
+          Ahmed abriu um pequeno restaurante que se tornou muito popular. Sua
+          história inspiradora de resiliência e coragem tocou o coração de
+          muitas pessoas, tornando-o um exemplo de sucesso para outros
+          imigrantes.
+        </p>
+        <div class="profile">
+          <img
+            src="img/img-escritor/luiza-oliv.jpeg"
+            alt=""
+            class="profile-img"
+          />
+          <span class="profile-name">Luiza Oliveira</span>
+        </div>
+      </div>
+      <!-- Post 10 -->
+      <div class="post-box NI">
+        <img src="img/img7.jpg" alt="" class="post-img" />
+        <h2 class="category">Notícias de Imigração</h2>
+        <a href="#" class="post-title"
+          >Novas políticas migratórias aceleram o processo de regularização</a
+        >
+        <span class="post-date">03 de Novembro - 2022</span>
+        <p class="post-description">
+          O governo brasileiro anuncia mudanças nos procedimentos de
+          regularização imigratória para facilitar e agilizar o acesso dos
+          imigrantes aos documentos legais.
+        </p>
+        <div class="profile">
+          <img src="img/img-escritor/gabriela.jpg" alt="" class="profile-img" />
+          <span class="profile-name">Gabriela Almeida</span>
+        </div>
+      </div>
+      <!-- Post 11 -->
+      <div class="post-box NI">
+        <img src="img/img8.jpg" alt="" class="post-img" />
+        <h2 class="category">Notícias de Imigração</h2>
+        <a href="#" class="post-title"
+          >Programas de empreendedorismo para imigrantes</a
+        >
+        <span class="post-date">20 de Dezembro - 2022</span>
+        <p class="post-description">
+          Iniciativas governamentais e privadas no Brasil oferecem programas de
+          apoio e financiamento para que os imigrantes possam empreender e
+          contribuir para o desenvolvimento econômico do país.
+        </p>
+        <div class="profile">
+          <img
+            src="img/img-escritor/rafael-costa.jpeg"
+            alt=""
+            class="profile-img"
+          />
+          <span class="profile-name"> Rafael Costa</span>
+        </div>
+      </div>
+      <!-- Post 12 -->
+      <div class="post-box RD">
+        <img src="img/img13.png" alt="" class="post-img" />
+        <h2 class="category">Recursos e Dicas</h2>
+        <a href="#" class="post-title"
+          >Toti Diversidade, Promove a empregabilidade de refugiados</a
+        >
+        <span class="post-date">10 de Dezembro - 2022</span>
+        <p class="post-description">
+          Ao longo de cinco anos, a Toti Diversidade formou 660 pessoas. Impacto
+          será potencializado em 2023, ano em que vai capacitar mais de 750
+          refugiados.
+        </p>
+        <div class="profile">
+          <img
+            src="img/img-escritor/refael-costa.jpeg"
+            alt=""
+            class="profile-img"
+          />
+          <span class="profile-name"> Refael Costa</span>
+        </div>
+      </div>
     </div>
 
     <footer>
-        <div class="footer-container">
-            <div class="sec aboutus">
-                <h2>About Us</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quisquam minus quo illo numquam vel incidunt pariatur hic commodi expedita tempora praesentium at iure fugiat ea, quam laborum aperiam veritatis.</p>
-                <ul class="sci">
-                    <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                    <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
-                    <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                    <li><a href="#"><i class="bx bxl-linkedin"></i></a></li>
-                </ul>
-            </div>
-            <div class="sec quicklinks">
-                <h2>Quick Links</h2>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </div>
-            <div class="sec contactBx">
-                <h2>Contact Info</h2>
-                <ul class="info">
-                    <li>
-                        <span><i class='bx bxs-map'></i></span>
-                        <span>1100, Brasil <br> Florianopolis SC  <br> BR </span>
-                    </li>
-                    <li>
-                        <span><i class='bx bx-envelope' ></i></span>
-                        <p><a href="coderFriends@gmail.com">coderFriends@gmail.com</a></p>
-                    </li>
-                </ul>
-            </div>
+      <div class="footer-container">
+        <div class="sec aboutus">
+          <h2>Acerca de</h2>
+          <p>
+            Com habilidades em programação: "Esmirna, Mariana, Varuska, Eduardo
+            e Neomar" decidiram estabelecer um site para ajudar outros
+            refugiados e migrantes a se integrarem na sociedade Brasileira. Seu
+            site oferece informações sobre busca de emprego e recursos
+            disponíveis, além de dicas sobre aprendizado do idioma e serviços.
+          </p>
+          <ul class="sci">
+            <li>
+              <a href="#"><i class="bx bxl-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-linkedin"></i></a>
+            </li>
+          </ul>
         </div>
+        <div class="sec quicklinks">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+        <div class="sec contactBx">
+          <h2>Contact Info</h2>
+          <ul class="info">
+            <li>
+              <span><i class="bx bxs-map"></i></span>
+              <span
+                >1100, Brasil <br />
+                Florianopolis SC <br />
+                BR
+              </span>
+            </li>
+            <li>
+              <span><i class="bx bx-envelope"></i></span>
+              <p><a href="coderFriends@gmail.com">coderFriends@gmail.com</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="main.js"></script>
-</body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="app.js"></script>
+  </body>
 </html>
