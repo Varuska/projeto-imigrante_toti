@@ -4,12 +4,6 @@ window.addEventListener("scroll", () => {
     header.classList.toggle("shadow", window.scrollY > 0)
 })
 
-function changeLanguage(language) {
-    // Oculta todos los elementos de contenido
-    var contentElements = document.querySelectorAll("[id^='content-']");
-    for (var i = 0; i)
-}
-
 //Filter
 $(document).ready(function () {
     $(".filter-item").click(function () {
